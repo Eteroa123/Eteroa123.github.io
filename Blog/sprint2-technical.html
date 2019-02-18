@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<body>
+<link href="../styles/main.css" rel="stylesheet" type="text/css" />
+<div class="TopNavBar">
+    <a href="../index.html">Home</a>
+    <a href= "sprint1-technical.html">Sprint 1</a>
+    <a href="sprint2-technical.html">Sprint 2</a>
+    <a href="#Sprint3"> Sprint 3</a>
+    <a href="#blog"> Blog</a>
+  </div>
+
+<title>What is the difference between Margin, Border, and Padding?</title>
+<center> <h1>What is the difference between Margin, Border, and Padding? </h1></center>
+<center><img src = "../images/duh.gif"> </center>
+
+<center><p>Kia ora ! Im Ete your handy dandy "Tell you all" about today's topic which is </p>
+<h2> What is the difference between Margin, Border, and Padding? </h2>
+
+<!--This shows the drop down information for each meaning-->
+
+<button class="QuestionInfo"><h2>Margin</h2></button>
+<div class="panel">
+<p>Margin is know as the space that is outside something. So picture a drawn box and picture 
+  three boxes inside this box. Margin is the outer box. When adding in margin you are given
+access to make the margin wider and longer. </p>
+<img src = "../images/Example.gif">
+</div>
+
+<button class="QuestionInfo"><h2>Border</h2></button>
+<div class="panel">
+<p>The border is like name a border that goes around the padding and element box. If we can picture again the drawn box then we can 
+  picture the border inside the margin box. Border are important not just because its to make it look pretty. But you can 
+change the spacing and also the width of the border.  </p>
+
+</div>
+
+<button class="QuestionInfo"><h2>Padding</h2></button>
+<div class="panel">
+<p>The padding of a box, inside the margin and border areas, and outside the content area. So that is what and where the padding is. And 
+  with padding you are able to remove space. For example I did a table and i wanted to move it up. By playing around with the
+Padding I was able to make it look tight and close. </p>
+</div>  
+</center>
+
+
+<script>
+var acc = document.getElementsByClassName("QuestionInfo");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+  /* Toggle between adding and removing the "active" class,
+  to highlight the button that controls the panel */
+  this.classList.toggle("active");
+
+  /* Toggle between hiding and showing the active panel */
+  var panel = this.nextElementSibling;
+  if (panel.style.display === "block") {
+    panel.style.display = "none";
+  } else {
+    panel.style.display = "block";
+  }
+});
+}
+</script>
+</head>
+
+</body>
